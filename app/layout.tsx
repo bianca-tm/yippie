@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
-import { Header } from './header'
+import Header  from './header'
 import { Footer } from './footer'
 import { ThemeProvider } from 'next-themes'
 
@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     canonical: '/'
   },
   title: {
-    default: 'Nim - Personal website template',
+    default: 'Bianca | Portfolio',
     template: '%s | Nim'
   },
-  description:  'Nim is a free and open-source personal website template built with Next.js 15, React 19 and Motion-Primitives.',
+  description:  'Portfolio of Bianca Tovalin-Mangual, enjoy!',
 };
 
 const geist = Geist({

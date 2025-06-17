@@ -27,6 +27,22 @@ type SocialLink = {
   link: string
 }
 
+export interface IMenuItem {
+  text: string;
+  url: string;
+}
+
+export const menuItems: IMenuItem[] = [
+  {
+    text: "Projects",
+    url: "#projects",
+  },
+  {
+    text: "Blog",
+    url: "#blog"
+  }
+];
+
 export const PROJECTS: Project[] = [
   {
     name: 'Motion Primitives Pro',
@@ -113,21 +129,25 @@ export const BLOG_POSTS: BlogPost[] = [
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    label: 'Github',
-    link: 'https://github.com/ibelick',
+    label: 'Resume',
+    link: '/tovalin-mangual_bianca_resume.pdf',
   },
   {
-    label: 'Twitter',
-    link: 'https://twitter.com/ibelick',
+    label: 'Github',
+    link: 'https://github.com/bianca-tm',
   },
+  // {
+  //   label: 'Twitter',
+  //   link: 'https://twitter.com/ibelick',
+  // },
   {
     label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/ibelick',
+    link: 'https://www.linkedin.com/in/bianca--tm',
   },
-  {
-    label: 'Instagram',
-    link: 'https://www.instagram.com/ibelick',
-  },
+  // {
+  //   label: 'Instagram',
+  //   link: 'https://www.instagram.com/',
+  // },
 ]
 
-export const EMAIL = 'your@email.com'
+export const EMAIL = 'tech.btovalin@gmail.com'
