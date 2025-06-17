@@ -137,8 +137,13 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-            Focused on creating intuitive and performant web experiences.
-            Bridging the gap between design and development.
+              Hello! My name is Bianca! I currently reside in Dallas, Texas.
+              Being a Georgia native, I graduated from Georgia State University in the spring of 2022, with a bachelors in business administration
+              in Computer Information Systems, with a concentration in cyber security! I ended with Magna Cum Laude, or High Honors and was recognized
+              on the Dean's List throughout every semester. I was honored to intern at HCL Technologies in the spring of 2022 in the data science sector.
+              Through this experience I gained a great deal of knowledge and interest in data and data visualizations!
+              I gained exposure to softwares such as Tableau, PowerBI, Alteryx, and Amazon QuickSight.
+            I am an avid gamer, and love to learn! I am currently learning more about UI/UX design and improving my coding!
           </p>
         </div>
       </motion.section>

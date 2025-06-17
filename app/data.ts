@@ -49,28 +49,36 @@ export const PROJECTS: Project[] = [
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-    company: 'Reglazed Studio',
-    title: 'CEO',
-    start: '2024',
+    company: 'Wisteria Software',
+    title: 'Co Founder',
+    start: '2025',
     end: 'Present',
     link: 'https://ibelick.com',
     id: 'work1',
   },
   {
-    company: 'Freelance',
-    title: 'Design Engineer',
-    start: '2022',
-    end: '2024',
+    company: 'Capital One',
+    title: 'Software Engineer',
+    start: '2023',
+    end: '2025',
     link: 'https://ibelick.com',
     id: 'work2',
   },
   {
-    company: 'Freelance',
-    title: 'Front-end Developer',
-    start: '2017',
-    end: 'Present',
+    company: 'SynsorMed',
+    title: 'Data Analyst',
+    start: '2022',
+    end: '2023',
     link: 'https://ibelick.com',
     id: 'work3',
+  },
+  {
+    company: 'D&V Consttruction',
+    title: 'Project Engineer',
+    start: '2018',
+    end: '2022',
+    link: 'https://ibelick.com',
+    id: 'work4',
   },
 ]
 
