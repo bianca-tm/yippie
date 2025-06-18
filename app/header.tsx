@@ -4,7 +4,7 @@ import Link from 'next/link'
 import React, { useState } from 'react';
 import { HiOutlineXMark, HiBars3 } from 'react-icons/hi2';
 import { ThemeSwitch } from '@/components/ui/theme-switch';
-import {menuItems} from "@/app/data";
+import { menuItems } from "@/app/data/data";
 
 const Header: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
