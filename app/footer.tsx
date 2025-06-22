@@ -47,7 +47,8 @@ function ThemeSwitch() {
         enableHover={false}
         onValueChange={(id) => {
           setTheme(id as string)
-        }} children={[]}    >
+        }}>
+        <></>
     </AnimatedBackground>
   )
 }
