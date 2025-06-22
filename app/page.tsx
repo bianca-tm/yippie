@@ -1,6 +1,6 @@
 'use client'
 import { motion } from 'motion/react'
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { XIcon } from 'lucide-react'
 import { Spotlight } from '@/components/ui/spotlight'
 import { Magnetic } from '@/components/ui/magnetic'
@@ -84,14 +84,20 @@ function ProjectVideo({ src }: ProjectVideoProps) {
 function MagneticSocialLink({
   children,
   link,
+    target,
+    rel,
 }: {
   children: React.ReactNode
   link: string
+  target?: string
+  rel?: string
 }) {
   return (
     <Magnetic springOptions={{ bounce: 0 }} intensity={0.3}>
       <a
         href={link}
+        target={target}
+        rel={rel}
         className="group relative inline-flex shrink-0 items-center gap-[1px] rounded-full bg-zinc-100 px-2.5 py-1 text-sm text-black transition-colors duration-200 hover:bg-zinc-950 hover:text-zinc-50 dark:bg-zinc-800 dark:text-zinc-100 dark:hover:bg-zinc-700"
       >
         {children}
@@ -129,6 +135,7 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
+        <h3 className="mb-5 text-lg font-medium">About Me</h3>
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
               Hello! My name is Bianca! I currently reside in Dallas, Texas.
@@ -146,7 +153,7 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-5 text-lg font-medium">Selected Projects</h3>
+        <h3 className="mb-5 text-lg font-medium">Projects</h3>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           {PROJECTS.map((project) => (
             <div key={project.name} className="space-y-2">
@@ -219,6 +226,7 @@ export default function Personal() {
         </div>
       </motion.section>
 
+      <section id="blog">
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
@@ -254,6 +262,7 @@ export default function Personal() {
           </AnimatedBackground>
         </div>
       </motion.section>
+     </section>
 
       <motion.section
         variants={VARIANTS_SECTION}
@@ -267,8 +276,14 @@ export default function Personal() {
           </a>
         </p>
         <div className="flex items-center justify-start space-x-3">
+          <MagneticSocialLink link="/tovalin-mangual_bianca_resume.pdf" target="_blank" rel="noopener noreferrer">
+            <span>Resume</span>
+          </MagneticSocialLink>
           {SOCIAL_LINKS.map((link) => (
-            <MagneticSocialLink key={link.label} link={link.link}>
+            <MagneticSocialLink key={link.label} link={link.link}
+                                target={['GitHub', 'LinkedIn'].includes(link.label) ? '_blank' : undefined}
+                                rel={['GitHub', 'LinkedIn'].includes(link.label) ? 'noopener noreferrer' : undefined}
+            >
               {link.label}
             </MagneticSocialLink>
           ))}

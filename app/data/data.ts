@@ -20,12 +20,8 @@ export const menuItems: IMenuItem[] = [
 ];
 
 export const SOCIAL_LINKS: SocialLink[] = [
-  {
-    label: 'Resume',
-    link: '/tovalin-mangual_bianca_resume.pdf',
-  },
-  {
-    label: 'Github',
+    {
+    label: 'GitHub',
     link: 'https://github.com/bianca-tm',
   },
   // {

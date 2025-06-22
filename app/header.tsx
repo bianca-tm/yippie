@@ -16,8 +16,8 @@ const Header: React.FC = () => {
   return (
     <header className="mb-8 flex items-center justify-between">
         {/* TODO: fix styling*/}
-        <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-2 px-5 md:py-10">
-      <div>
+        <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-2 px-5 md:py-10 w-full">
+      <div className="flex flex-col justify-center">
         <Link href="/" className="font-medium text-black dark:text-white">
           Bianca Tovalin-Mangual
         </Link>
@@ -28,10 +28,11 @@ const Header: React.FC = () => {
           className="text-zinc-600 dark:text-zinc-500"
           delay={0.25}
         >
-          Tech Jack of Trades
+          Tech enjoyer
         </TextEffect>
       </div>
       {/* Desktop Menu */}
+    <div className="flex items-center">
       <ul className="hidden md:flex space-x-6">
         {menuItems.map(item => (
             <li key={item.text}>
@@ -40,11 +41,16 @@ const Header: React.FC = () => {
               </Link>
             </li>
         ))}
-        {/*<li>*/}
-        {/*  <Link href="#cta" className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors rounded-full w-full sm:w-fit text-white bg-slate-500">*/}
-        {/*    Reach Out!*/}
-        {/*  </Link>*/}
-        {/*</li>*/}
+          <li>
+              <a
+                  href="/tovalin-mangual_bianca_resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground hover:text-foreground-accent transition-colors"
+              >
+                  Resume
+              </a>
+          </li>
           <ThemeSwitch />
       </ul>
             {/* Mobile Menu Button */}
@@ -64,6 +70,7 @@ const Header: React.FC = () => {
                     <span className="sr-only">Toggle navigation</span>
                 </button>
             </div>
+        </div>
         </nav>
 
     </header>

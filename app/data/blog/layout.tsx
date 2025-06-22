@@ -1,7 +1,7 @@
 'use client'
 import { TextMorph } from '@/components/ui/text-morph'
 import { ScrollProgress } from '@/components/ui/scroll-progress'
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 function CopyButton() {
   const [text, setText] = useState('Copy')
