@@ -180,7 +180,7 @@ export default function Personal() {
           {WORK_EXPERIENCE.map((job) => (
               <div key={job.id}>
                 <button
-                    className="relative w-full overflow-hidden rounded-2xl bg-zinc-300/30 p-[1px] dark:bg-zinc-600/30 text-left"
+                    className="relative w-full overflow-hidden rounded-2xl bg-zinc-300/30 p-[1px] dark:bg-zinc-600/30 text-left hover:cursor-pointer"
                     onClick={() =>
                         setExpandedJobId(expandedJobId === job.id ? null : job.id)
                     }
