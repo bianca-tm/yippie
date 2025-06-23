@@ -20,6 +20,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --sh-class: #7aa2f7;
   --sh-sign: #89ddff;
