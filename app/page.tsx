@@ -1,7 +1,6 @@
 'use client'
 import { motion } from 'motion/react'
 import React, { useState } from 'react'
-import { XIcon } from 'lucide-react'
 import { Spotlight } from '@/components/ui/spotlight'
 import { Magnetic } from '@/components/ui/magnetic'
 import { MorphingDialog, MorphingDialogTrigger, MorphingDialogContent, MorphingDialogClose, MorphingDialogContainer } from '@/components/ui/morphing-dialog'
@@ -10,7 +9,6 @@ import { AnimatedBackground } from '@/components/ui/animated-background'
 import { EMAIL, SOCIAL_LINKS } from './data/data'
 import { PROJECTS } from "@/app/data/projects";
 import { WORK_EXPERIENCE } from '@/app/data/work-experience'
-import { BLOG_POSTS } from '@/app/data/blog/blog'
 import Projects from '../components/Projects'
 
 const VARIANTS_CONTAINER = {
@@ -93,13 +91,7 @@ export default function Personal() {
         <h3 className="mb-5 text-lg font-medium">About Me</h3>
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-              Hello! My name is Bianca! I currently reside in Dallas, Texas.
-              Being a Georgia native, I graduated from Georgia State University in the spring of 2022, with a bachelors in business administration
-              in Computer Information Systems, with a concentration in cyber security! I ended with Magna Cum Laude, or High Honors and was recognized
-              on the Dean's List throughout every semester. I was honored to intern at HCL Technologies in the spring of 2022 in the data science sector.
-              Through this experience I gained a great deal of knowledge and interest in data and data visualizations!
-              I gained exposure to softwares such as Tableau, PowerBI, Alteryx, and Amazon QuickSight.
-            I am an avid gamer, and love to learn! I am currently learning more about UI/UX design and improving my coding!
+            Hi, I’m Bianca. I enjoy working at the intersection of tech, design, and user experience. I’m always learning and love exploring new ideas and ways to grow.
           </p>
         </div>
       </motion.section>
@@ -159,45 +151,6 @@ export default function Personal() {
           ))}
         </div>
       </motion.section>
-
-      <section id="blog">
-      <motion.section
-        variants={VARIANTS_SECTION}
-        transition={TRANSITION_SECTION}
-      >
-        <h3 className="mb-3 text-lg font-medium">Blog</h3>
-        <div className="flex flex-col space-y-0">
-          <AnimatedBackground
-            enableHover
-            className="h-full w-full rounded-lg bg-zinc-100 dark:bg-zinc-900/80"
-            transition={{
-              type: 'spring',
-              bounce: 0,
-              duration: 0.2,
-            }}
-          >
-            {BLOG_POSTS.map((post) => (
-              <Link
-                key={post.uid}
-                className="-mx-3 rounded-xl px-3 py-3"
-                href={post.link}
-                data-id={post.uid}
-              >
-                <div className="flex flex-col space-y-1">
-                  <h4 className="font-normal dark:text-zinc-100">
-                    {post.title}
-                  </h4>
-                  <p className="text-zinc-500 dark:text-zinc-400">
-                    {post.description}
-                  </p>
-                </div>
-              </Link>
-            ))}
-          </AnimatedBackground>
-        </div>
-      </motion.section>
-     </section>
-
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
