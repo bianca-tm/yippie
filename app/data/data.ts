@@ -13,10 +13,6 @@ export const menuItems: IMenuItem[] = [
     text: "Projects",
     url: "#projects",
   },
-  {
-    text: "Blog",
-    url: "#blog"
-  }
 ];
 
 export const SOCIAL_LINKS: SocialLink[] = [
