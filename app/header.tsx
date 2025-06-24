@@ -9,7 +9,7 @@ const Header: React.FC = () => {
 
     return (
         // TODO: make top text and menu items aligned with the other sections
-        <header className="w-full bg-white dark:bg-black transition-colors duration-300">
+        <header className="w-full bg-white dark:bg-transparent transition-colors duration-300">
             <div className="max-w-3xl mx-auto px-5 mb-8">
                 <nav className="flex justify-between items-center py-2 md:py-10 w-full">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between w-full">
