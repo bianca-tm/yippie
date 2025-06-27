@@ -1,8 +1,10 @@
 type Project = {
     name: string
     description: string
+    languages?: string
     link?: string
     video?: string
+    coverImg?: string
     id: string
     category: 'swe' | 'data' | 'creative'
 }
@@ -12,34 +14,41 @@ export const PROJECTS: Project[] = [
         name: 'jucie!',
         description:
             'Random facts about random fruits',
+        languages: 'js, html, css',
         link: 'https://github.com/bianca-tm/jucie',
+        coverImg:
+            '/cover.jpg',
         id: 'project1',
         category: 'swe',
     },
     {
-        name: 'swe placeholder 2',
+        name: 'tile game',
         description:
-            'description of swe placeholder 2',
+            '9 and 16 tile puzzle game.',
+        languages: 'js, html, css',
+        link: 'https://github.com/bianca-tm/tile-game',
+        coverImg:
+            '/cover.jpg',
         id: 'project2',
         category: 'swe',
     },
-    {
-        name: 'swe placeholder 3',
-        description:
-            'description of swe placeholder 3',
-        // link: 'https://pro.motion-primitives.com/',
-        // video:
-        //     'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
-        id: 'project3',
-        category: 'swe',
-    },
-    {
-        name: 'swe placeholder 4',
-        description:
-            'description of swe placeholder 4',
-        id: 'project4',
-        category: 'swe',
-    },
+    // {
+    //     name: 'swe placeholder 3',
+    //     description:
+    //         'description of swe placeholder 3',
+    //     // link: 'https://pro.motion-primitives.com/',
+    //     // video:
+    //     //     'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
+    //     id: 'project3',
+    //     category: 'swe',
+    // },
+    // {
+    //     name: 'swe placeholder 4',
+    //     description:
+    //         'description of swe placeholder 4',
+    //     id: 'project4',
+    //     category: 'swe',
+    // },
     {
         name: 'data placeholder',
         description: 'description of data placeholder 1',
