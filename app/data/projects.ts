@@ -9,9 +9,10 @@ type Project = {
 
 export const PROJECTS: Project[] = [
     {
-        name: 'swe placeholder',
+        name: 'jucie!',
         description:
-            'description of swe placeholder 1',
+            'Random facts about random fruits',
+        link: 'https://github.com/bianca-tm/jucie',
         id: 'project1',
         category: 'swe',
     },
