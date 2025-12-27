@@ -37,18 +37,17 @@ function ThemeSwitch() {
 
   return (
     <AnimatedBackground
-        className="pointer-events-none rounded-lg bg-zinc-100 dark:bg-zinc-800"
-        defaultValue={theme}
-        transition={{
-          type: 'spring',
-          bounce: 0,
-          duration: 0.2,
-        }}
-        enableHover={false}
-        onValueChange={(id) => {
-          setTheme(id as string)
-        }}>
-        <></>
+      className="pointer-events-none rounded-lg bg-zinc-100 dark:bg-zinc-800"
+      defaultValue={theme}
+      transition={{
+        type: 'spring',
+        bounce: 0,
+        duration: 0.2,
+      }}
+      enableHover={false}
+      onValueChange={(id) => {
+        setTheme(id as string)
+      } } children={[]}>
     </AnimatedBackground>
   )
 }
@@ -59,7 +58,7 @@ export function Footer() {
       <div className="flex items-center justify-between">
           <TextLoop className="text-xs text-zinc-500">
             <span>© 2025 Bianca Tovalin-Mangual</span>
-            <span>Thank you for stopping by!</span>
+            <span>Thanks for stopping by!</span>
           </TextLoop>
         <div className="text-xs text-zinc-400">
           <ThemeSwitch />
