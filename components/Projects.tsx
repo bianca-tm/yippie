@@ -125,7 +125,11 @@ export default function Projects() {
                             <p className="text-base text-zinc-600 dark:text-zinc-400">
                                 {project.description}
                                 <br/>
-                                languages: {project.languages}
+                                {project.languages
+  ? <span>languages: {project.languages}</span>
+  : project.tech
+    ? <span>tech used: {project.tech}</span>
+    : null}
                             </p>
                         </div>
                     </div>

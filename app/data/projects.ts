@@ -2,6 +2,7 @@ type Project = {
     name: string
     description: string
     languages?: string
+    tech?: string
     link?: string
     video?: string
     coverImg?: string
@@ -17,7 +18,7 @@ export const PROJECTS: Project[] = [
         languages: 'js, html, css',
         link: 'https://github.com/bianca-tm/jucie',
         coverImg:
-            '/cover.jpg',
+            '/coverImg1.jpg',
         id: 'project1',
         category: 'swe',
     },
@@ -28,7 +29,7 @@ export const PROJECTS: Project[] = [
         languages: 'js, html, css',
         link: 'https://github.com/bianca-tm/tile-game',
         coverImg:
-            '/cover.jpg',
+            '/coverImg2.jpg',
         id: 'project2',
         category: 'swe',
     },
@@ -50,51 +51,61 @@ export const PROJECTS: Project[] = [
     //     category: 'swe',
     // },
     {
-        name: 'data placeholder',
-        description: 'description of data placeholder 1',
+        name: 'ember',
+        description: 'quantifying online sales data to identify top-selling products within a speciifc region.',
+        tech: 'Python, SQL, Tableau',
+        coverImg:
+            '/coverImg3.jpg',
         id: 'project5',
         category: 'data',
     },
     {
-        name: 'data placeholder 2',
-        description: 'description of data placeholder 2',
+        name: 'polar',
+        description: 'data pipeline with monitoring that delivers real-time analytics on reliable datasets.',
+        tech: 'AWS, Airflow, Snowflake',
+        coverImg:
+            '/coverImg4.jpg',
         id: 'project6',
         category: 'data',
     },
-    {
-        name: 'data placeholder 3',
-        description: 'description of data placeholder 3',
-        id: 'project7',
-        category: 'data',
-    },
-    {
-        name: 'data placeholder 4',
-        description: 'description of data placeholder 4',
-        id: 'project8',
-        category: 'data',
-    },
+    // {
+    //     name: 'data placeholder 3',
+    //     description: 'description of data placeholder 3',
+    //     id: 'project7',
+    //     category: 'data',
+    // },
+    // {
+    //     name: 'data placeholder 4',
+    //     description: 'description of data placeholder 4',
+    //     id: 'project8',
+    //     category: 'data',
+    // },
     {
         name: 'creative placeholder',
         description: 'description of creative placeholder 1',
+        coverImg:
+            '/coverImg5.jpg',
         id: 'project9',
         category: 'creative',
     },
     {
         name: 'creative placeholder 2',
         description: 'description of creative placeholder 2',
+        coverImg:
+            '/coverImg6.jpg',
         id: 'project10',
         category: 'creative',
     },
-    {
-        name: 'creative placeholder 3',
-        description: 'description of creative placeholder 3',
-        id: 'project11',
-        category: 'creative',
-    },
-    {
-        name: 'creative placeholder 4',
-        description: 'description of creative placeholder 4',
-        id: 'project12',
-        category: 'creative',
-    },
+    // {
+    //     name: 'creative placeholder 3',
+    //     description: 'description of creative placeholder 3',
+    //     id: 'project11',
+    //     category: 'creative',
+    // },
+    // {
+    //     name: 'creative placeholder 4',
+    //     description: 'description of creative placeholder 4',
+    //     id: 'project12',
+    //     category: 'creative',
+    // },
 ]
