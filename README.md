@@ -12,3 +12,5 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/afa8e2e7-1bea-4180-b4a5-e7f5ee93f3eb/deploy-status)](https://app.netlify.com/projects/bianca-tm/deploys)
