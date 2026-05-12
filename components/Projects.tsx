@@ -126,10 +126,10 @@ export default function Projects() {
                                 {project.description}
                                 <br/>
                                 {project.languages
-  ? <span>languages: {project.languages}</span>
-  : project.tech
-    ? <span>tech used: {project.tech}</span>
-    : null}
+                                ? <span>languages: {project.languages}</span>
+                                : project.tech
+                                ? <span>tech used: {project.tech}</span>
+                                : null}
                             </p>
                         </div>
                     </div>
