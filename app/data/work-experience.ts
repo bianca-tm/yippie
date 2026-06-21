@@ -15,7 +15,12 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
         end: 'Present',
         id: 'work1',
         details: [
-            'Building Data centers.'
+            'Field operations on 150MW mission critical/hyperscale data center projects, coordinating multi-trade daily activities, specializing in low-voltage systems, structured cabling, fiber backbone, DAS, and controls integration.',
+            'Managed $10M+ in subcontractor scopes including cost tracking, change order management, and budget forecasting.',
+            'Coordinated procurement and delivery of long-lead mission critical equipment to maintain schedule milestones.',
+            'Managed internal progress meetings, RFIs, submittals, and closeout/documentation efforts.',
+            'Assisted with look-ahead planning, schedule updates, and critical path tracking for multi-trade execution.',
+            'Coordinated with city/municipal agencies on permitting, inspections, and regulatory compliance.'
         ],
     },
     {

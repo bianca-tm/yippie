@@ -91,7 +91,7 @@ export default function Personal() {
         <h3 className="mb-5 text-lg font-medium">About Me</h3>
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-            Hi, I’m Bianca. I enjoy working at the intersection of tech, design, and user experience. I’m always learning and love exploring new ideas and ways to grow.
+            Hi, I’m Bianca. I enjoy working at the intersection of tech, design, and creating solutions to real-world problems. I’m always learning and love exploring new ideas and ways to grow.
           </p>
         </div>
       </motion.section>
