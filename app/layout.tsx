@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   title: {
     default: 'Bianca | Portfolio',
-    template: '%s | Nim'
+    template: '%s | Bianca Tovalin-Mangual Portfolio',
   },
   description:  'Portfolio of Bianca Tovalin-Mangual, enjoy!',
 };
